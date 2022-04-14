@@ -36,8 +36,8 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="http://www.logicstime.com/" target="_blank">
-          <MdDeveloperMode style={{ marginBottom: "2px" }} /> Logicstime.com
+        <Navbar.Brand href="/" >
+          <MdDeveloperMode style={{ marginBottom: "2px" }} /> DreamixCloud
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -90,15 +90,15 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link
-                href="http://www.logicstime.com/"
+                href="https://www.fiverr.com/madeel12?up_rollout=true"
                 target="_blank"
                 rel="noreferrer"
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+                <ImBlog style={{ marginBottom: "2px" }} /> Fiverr
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
