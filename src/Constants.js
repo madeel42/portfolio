@@ -3,6 +3,7 @@ import PIAIC from "./Assets/Projects/piaic.PNG";
 import quiz from "./Assets/Projects/quiz.PNG";
 import Fullin from "./Assets/Projects/fullin.PNG";
 import Syscoin from "./Assets/Projects/syscoin.PNG";
+import Chartapp from "./Assets/Projects/chartapp.PNG";
 import Expense from "./Assets/Projects/expense.PNG";
 import Arqui from "./Assets/Projects/arqui.PNG";
 import Covid from "./Assets/Projects/Covid.PNG";
@@ -51,6 +52,13 @@ export const PROJECTS = [
     technologyUsed: "Reactjs, material-ui",
     description: "",
     url: "https://syscoins.surge.sh/",
+  },
+  {
+    image: Chartapp,
+    name: "Token Chartapp",
+    technologyUsed: "Reactjs, material-ui, ethersjs, solidity, hardhat",
+    description: "",
+    url: "https://chart12.netlify.app/dashboard/default",
   },
   {
     image: Covid,
