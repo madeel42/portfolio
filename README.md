@@ -1,13 +1,13 @@
 <h2 align="center">
   Portfolio Website live demo
-  <a href="https://madeel42.github.io" target="_blank">Adeel-Dev-Portfolio</a>
+  <a href="https://madeel-portfolio.netlify.app/" target="_blank">Adeel-Dev-Portfolio</a>
 </h2>
 
 </div>
 
 ## Built With
 
-My personal portfolio   <a href="https://madeel42.github.io" target="_blank">https://madeel42.github.io</a> 
+My personal portfolio   <a href="https://madeel-portfolio.netlify.app/" target="_blank">https://madeel-portfolio.netlify.app/</a> 
 
 This project was built using these technologies.
 

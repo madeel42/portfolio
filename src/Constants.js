@@ -58,7 +58,7 @@ export const PROJECTS = [
     name: "Token Chartapp",
     technologyUsed: "Reactjs, material-ui, ethersjs, solidity, hardhat",
     description: "",
-    url: "https://chart12.netlify.app/dashboard/default",
+    url: "https://chart12.netlify.app/",
   },
   {
     image: Covid,
