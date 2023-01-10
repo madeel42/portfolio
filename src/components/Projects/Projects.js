@@ -27,7 +27,7 @@ function Projects() {
         </Row>
         <a href="https://github.com/madeel42?tab=repositories" target="_blank">
           {" "}
-          <Button variant="primary">For More Projects</Button>
+          <Button variant="primary">For More Projects Visit Github</Button>
         </a>
       </Container>
     </Container>

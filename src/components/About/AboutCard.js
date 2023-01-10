@@ -15,7 +15,7 @@ function AboutCard() {
             code.
             <br />
             Motivated designer and developer with experience creating custom
-            websites with HTML5, CSS3 , JavaScript, TypeScript ReactJs, Nextjs,
+            websites with HTML5, CSS3 , JavaScript, TypeScript ReactJs, Svelte , Nextjs,
             Redux-Thunk, Nodejs, Expressjs, mongodb, Firebase, Material-ui,
             Antd(and many other Ui library as well) . I also have experience in
             BlockChain development like Solidity , hardhat, etherjs, web3js.

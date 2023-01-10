@@ -86,6 +86,7 @@ export const PROJECTS = [
 
 export const SKILLS = [
   { name: "ReactJs", initialRating: 5 },
+  { name: "Svelte", initialRating: 5 },
   { name: "JavaScript", initialRating: 4 },
   { name: "Redux", initialRating: 5 },
   { name: "Shopify/Reactjs", initialRating: 5 },
