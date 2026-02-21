@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "2.0.0",
   "private": true,
-  "homepage": "https://madeel42.github.io/portfolio",
+  "homepage": "https://madeel-portfolio.netlify.app",
   "dependencies": {
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^14.2.1",
