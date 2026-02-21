@@ -1,25 +1,28 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
-import Rating from "react-rating"
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
-function Techstack(props) {
+function Techstack({ name, percentage }) {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   return (
-    <>
-    <Row style={{ justifyContent: "left", paddingBottom: "10px" }}>
-       <Col className="skill-name" xs={4}>
-        {props.name}
-      </Col>
-      <Col xs={6}>
-        <Rating
-          readonly
-          start={0}
-          stop={5}
-          initialRating={props.initialRating}
-          className="rating"
+    <div className="skill-item" ref={ref}>
+      <div className="skill-header">
+        <span className="skill-name">{name}</span>
+        <span className="skill-percentage">{percentage}%</span>
+      </div>
+      <div className="skill-bar">
+        <motion.div
+          className="skill-progress"
+          initial={{ width: 0 }}
+          animate={{ width: inView ? `${percentage}%` : 0 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
         />
-      </Col>
-    </Row>
-    </>
+      </div>
+    </div>
   );
 }
 

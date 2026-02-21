@@ -1,39 +1,74 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
+import { motion } from "framer-motion";
+import { HiOutlineCode, HiOutlineLightBulb, HiOutlineGlobeAlt } from "react-icons/hi";
+
 function AboutCard() {
+  const highlights = [
+    { icon: <HiOutlineCode />, text: "6+ Years Experience" },
+    { icon: <HiOutlineLightBulb />, text: "50+ Projects Delivered" },
+    { icon: <HiOutlineGlobeAlt />, text: "Web3 & Blockchain Expert" },
+  ];
+
   return (
     <Card className="quote-card-view">
       <Card.Body>
-        <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am{" "}
-            <span className="purple">Muhammad Adeel Akhtar </span>
-            from <span className="purple"> Sargodha, Pakistan.</span>
-            <br />
-            Software Engineer who loves to transform ideas into reality using
-            code.
-            <br />
-            Motivated designer and developer with experience creating custom
-            websites with HTML5, CSS3 , JavaScript, TypeScript ReactJs, Svelte , Nextjs,
-            Redux-Thunk, Nodejs, Expressjs, mongodb, Firebase, Material-ui,
-            Antd(and many other Ui library as well) . I also have experience in
-            BlockChain development like Solidity , hardhat, etherjs, web3js.
-            <br />
-            Apart from coding, some other activities that I love to do!
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
+          <p style={{ textAlign: "justify", lineHeight: 1.8 }}>
+            Hi! I'm <span className="highlight">Adeel Akhtar</span>, a passionate{" "}
+            <span className="highlight">Software Architect</span> based in{" "}
+            <span className="highlight">Lahore, Pakistan</span>.
           </p>
-          <ul>
-            <li className="about-activity">
-              <ImPointRight /> Playing Games
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Travelling
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Watching Movies
-            </li>
-          </ul>
-        </blockquote>
+          
+          <p style={{ textAlign: "justify", lineHeight: 1.8 }}>
+            With over <strong>6 years of experience</strong>, I specialize in building 
+            scalable web applications and blockchain-based solutions. My expertise spans 
+            across <span className="highlight">React.js</span>, <span className="highlight">Node.js</span>, 
+            {" "}<span className="highlight">TypeScript</span>, <span className="highlight">Python</span>, 
+            and cutting-edge <span className="highlight">Web3 technologies</span> including 
+            Solidity, Ether.js, and Web3.js.
+          </p>
+
+          <p style={{ textAlign: "justify", lineHeight: 1.8 }}>
+            Currently working at <span className="highlight">Calrom</span>, I'm dedicated 
+            to delivering high-performance applications that are optimized for the modern web. 
+            I believe in writing clean, maintainable code and creating exceptional user experiences.
+          </p>
+
+          <div style={{ 
+            display: "flex", 
+            gap: "1.5rem", 
+            marginTop: "1.5rem",
+            flexWrap: "wrap",
+            justifyContent: "flex-start"
+          }}>
+            {highlights.map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.3, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "0.5rem",
+                  color: "var(--accent-color)",
+                  fontSize: "0.95rem",
+                  fontWeight: 500
+                }}
+              >
+                <span style={{ fontSize: "1.25rem" }}>{item.icon}</span>
+                {item.text}
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
       </Card.Body>
     </Card>
   );

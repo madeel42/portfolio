@@ -6,15 +6,17 @@ function TypeWriter() {
     <Typewriter
       options={{
         strings: [
-          "Front End Developer",
-          "BlockChain Developer",
-          "Back End Developer",
-          "Software Engineer",
-          "Open Source Contributor",
+          "Software Architect",
+          "Full Stack Developer",
+          "React.js Expert",
+          "Web3 & Blockchain Dev",
+          "AI Enthusiast",
+          "TypeScript Pro",
         ],
         autoStart: true,
         loop: true,
-        deleteSpeed: 50,
+        deleteSpeed: 25,
+        delay: 70,
       }}
     />
   );
