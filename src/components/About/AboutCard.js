@@ -5,9 +5,9 @@ import { HiOutlineCode, HiOutlineLightBulb, HiOutlineGlobeAlt } from "react-icon
 
 function AboutCard() {
   const highlights = [
-    { icon: <HiOutlineCode />, text: "6+ Years Experience" },
+    { icon: <HiOutlineCode />, text: "8+ Years Experience" },
     { icon: <HiOutlineLightBulb />, text: "50+ Projects Delivered" },
-    { icon: <HiOutlineGlobeAlt />, text: "Web3 & Blockchain Expert" },
+    { icon: <HiOutlineGlobeAlt />, text: "AI & SaaS Specialist" },
   ];
 
   return (
@@ -26,12 +26,11 @@ function AboutCard() {
           </p>
           
           <p style={{ textAlign: "justify", lineHeight: 1.8 }}>
-            With over <strong>6 years of experience</strong>, I specialize in building 
-            scalable web applications and blockchain-based solutions. My expertise spans 
-            across <span className="highlight">React.js</span>, <span className="highlight">Node.js</span>, 
-            {" "}<span className="highlight">TypeScript</span>, <span className="highlight">Python</span>, 
-            and cutting-edge <span className="highlight">Web3 technologies</span> including 
-            Solidity, Ether.js, and Web3.js.
+            With over <strong>8 years of experience</strong>, I help startups, SaaS companies, and enterprise teams develop 
+            modern web applications using <span className="highlight">React.js</span>, <span className="highlight">Next.js</span>, 
+            {" "}<span className="highlight">TypeScript</span>, <span className="highlight">Node.js</span>, 
+            and modern <span className="highlight">AI technologies</span>. I build secure, high-performance solutions that 
+            deliver measurable value—from MVP development to enterprise-grade platforms.
           </p>
 
           <p style={{ textAlign: "justify", lineHeight: 1.8 }}>

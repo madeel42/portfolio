@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
+import WhyHireMe from "./WhyHireMe";
 import developer from "../../Assets/developer.jpg";
 import { SKILLS, TOOLS, EXPERIENCE } from "../../Constants";
 import { 
@@ -46,7 +47,7 @@ const staggerContainer = {
 function About() {
   const frontendSkills = SKILLS.filter(s => s.category === "frontend");
   const backendSkills = SKILLS.filter(s => s.category === "backend");
-  const blockchainSkills = SKILLS.filter(s => s.category === "blockchain");
+  const aiSkills = SKILLS.filter(s => s.category === "ai");
 
   return (
     <Container fluid className="about-section">
@@ -114,6 +115,8 @@ function About() {
           </Row>
         </motion.div>
 
+        <WhyHireMe />
+
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -154,8 +157,8 @@ function About() {
 
             <Col lg={4} md={6}>
               <motion.div variants={fadeInUp} className="skill-category">
-                <h3 className="skill-category-title">Blockchain & Web3</h3>
-                {blockchainSkills.map((skill, index) => (
+                <h3 className="skill-category-title">AI & Automation</h3>
+                {aiSkills.map((skill, index) => (
                   <Techstack
                     key={index}
                     name={skill.name}

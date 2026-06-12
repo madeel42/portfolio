@@ -6,11 +6,11 @@ function TypeWriter() {
     <Typewriter
       options={{
         strings: [
-          "Software Architect",
-          "Full Stack Developer",
-          "React.js Expert",
-          "Web3 & Blockchain Dev",
-          "AI Enthusiast",
+          "Senior Full-Stack Engineer",
+          "AI Integration Specialist",
+          "React & Next.js Expert",
+          "SaaS Platform Developer",
+          "Node.js Architect",
           "TypeScript Pro",
         ],
         autoStart: true,

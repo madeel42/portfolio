@@ -40,20 +40,20 @@ const experiences = [
     title: "Software Engineer",
     company: "SL2 Studio",
     duration: "May 2022 - Sep 2022",
-    description: "Built blockchain and Web3 projects using Solidity, Ether.js, and Web3.js."
+    description: "Worked on full-stack web applications, custom business solutions, and API integrations."
   },
   {
     title: "Software Developer",
     company: "GamicaCloud",
     duration: "Nov 2019 - Apr 2022",
-    description: "Created web applications using React, Redux, Node.js, MongoDB, and Firebase."
+    description: "Built scalable web applications using the React ecosystem, Node.js, and MongoDB."
   }
 ];
 
 const skills = [
-  "React.js", "TypeScript", "JavaScript", "Node.js", "Python", 
-  "Next.js", "Redux", "Svelte", "MongoDB", "GraphQL",
-  "Web3.js", "Ether.js", "Solidity", "Hardhat", "AWS"
+  "React.js", "Next.js", "TypeScript", "Node.js", "Express.js", 
+  "OpenAI", "LangChain", "RAG Systems", "Pinecone", "MongoDB",
+  ".NET Core", "SQL Server", "Firebase", "Redux Toolkit", "AWS"
 ];
 
 function ResumeNew() {
@@ -72,7 +72,7 @@ function ResumeNew() {
               My <span className="purple">Resume</span>
             </h1>
             <p style={{ color: "var(--text-muted)", fontSize: "1.15rem", maxWidth: "600px", margin: "0 auto 2rem" }}>
-              6+ years of experience building innovative web applications and blockchain solutions
+              8+ years of experience building modern web applications, SaaS platforms, and AI integrations
             </p>
             <Button 
               variant="primary" 
@@ -97,7 +97,7 @@ function ResumeNew() {
                     <div style={{ marginBottom: "3rem" }}>
                       <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "1.5rem" }}>
                         <HiOutlineBriefcase style={{ fontSize: "1.75rem", color: "var(--primary)" }} />
-                        <h2 style={{ margin: 0, fontSize: "1.5rem", fontWeight: 700 }}>Work Experience</h2>
+                        <h2 style={{ margin: 0, fontSize: "1.5rem", fontWeight: 700, color: "white" }}>Work Experience</h2>
                       </div>
                       
                       {experiences.map((exp, index) => (
@@ -142,7 +142,7 @@ function ResumeNew() {
                     <div>
                       <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "1.5rem" }}>
                         <HiOutlineAcademicCap style={{ fontSize: "1.75rem", color: "var(--primary)" }} />
-                        <h2 style={{ margin: 0, fontSize: "1.5rem", fontWeight: 700 }}>Education</h2>
+                        <h2 style={{ margin: 0, fontSize: "1.5rem", fontWeight: 700, color: "white" }}>Education</h2>
                       </div>
                       
                       <div style={{
@@ -181,7 +181,7 @@ function ResumeNew() {
                     }}>
                       <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "1.25rem" }}>
                         <HiOutlineCode style={{ fontSize: "1.5rem", color: "var(--primary)" }} />
-                        <h3 style={{ margin: 0, fontSize: "1.25rem", fontWeight: 700 }}>Skills</h3>
+                        <h3 style={{ margin: 0, fontSize: "1.25rem", fontWeight: 700, color: "white" }}>Skills</h3>
                       </div>
                       
                       <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem" }}>

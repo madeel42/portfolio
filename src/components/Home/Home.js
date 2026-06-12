@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import myImg from "../../Assets/adii.jpeg";
 import SocialMedia from "../SocialMedia";
 import TypeWriter from "./TypeWriter";
+import Services from "./Services";
+import Industries from "./Industries";
 import { NavLink } from "react-router-dom";
 import { AiOutlineDownload } from "react-icons/ai";
 import { BsArrowRight, BsRobot } from "react-icons/bs";
@@ -52,7 +54,7 @@ function Home() {
               >
                 <motion.div variants={fadeInUp} className="ai-badge">
                   <HiOutlineSparkles />
-                  <span>AI & Web3 Enthusiast</span>
+                  <span>AI & Full-Stack Specialist</span>
                   <BsRobot />
                 </motion.div>
 
@@ -63,16 +65,14 @@ function Home() {
                   </span>
                 </motion.p>
 
-                <motion.h1 variants={fadeInUp} className="heading-name">
-                  I'm{" "}
-                  <span className="main-name">Adeel Akhtar</span>
+                <motion.h1 variants={fadeInUp} className="heading-name" style={{ fontSize: "2.5em", color: "white" }}>
+                  Building AI-Powered <span className="main-name">SaaS Products</span> & Modern Web Applications
                 </motion.h1>
 
                 <motion.p variants={fadeInUp} className="heading-description">
-                  A passionate <strong>Software Architect</strong> crafting innovative 
-                  digital experiences. With <strong>6+ years</strong> building scalable 
-                  web applications, blockchain solutions, and leveraging <strong>AI</strong> to 
-                  solve complex problems.
+                  I help startups and businesses build scalable web platforms, AI integrations, 
+                  intelligent automation systems, and enterprise-grade applications using 
+                  <strong> React, Next.js, Node.js, TypeScript,</strong> and modern <strong>AI technologies</strong>.
                 </motion.p>
 
                 <motion.div variants={fadeInUp} className="role-title">
@@ -81,7 +81,7 @@ function Home() {
 
                 <motion.div variants={fadeInUp} className="stats-container">
                   <div className="stat-item">
-                    <span className="stat-number">6+</span>
+                    <span className="stat-number">8+</span>
                     <span className="stat-label">Years Experience</span>
                   </div>
                   <div className="stat-item">
@@ -121,6 +121,9 @@ function Home() {
         </Container>
       </Container>
 
+      <Services />
+      <Industries />
+
       <Container fluid className="home-about-section" id="about">
         <Container>
           <Row>
@@ -131,13 +134,9 @@ function Home() {
                 transition={{ duration: 0.7 }}
                 viewport={{ once: true }}
               >
-                <h1>Let's Build Something Amazing</h1>
+                <h1>Let's Build Something Intelligent</h1>
                 <p>
-                  Open for exciting opportunities, collaborations, and innovative projects.
-                  Let's connect and create something extraordinary together.
-                </p>
-                <p className="whatsapp-link">
-                  <strong>WhatsApp: +92 307 531 8870</strong>
+                  Looking to build an AI-powered application, SaaS platform, or modern web product? Let's discuss your project.
                 </p>
                 <SocialMedia />
               </motion.div>

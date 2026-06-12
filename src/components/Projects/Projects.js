@@ -38,13 +38,13 @@ function Projects() {
           </motion.h1>
           <motion.p 
             variants={fadeInUp}
-            style={{ color: "var(--text-secondary)", marginBottom: "3rem" }}
+            style={{ color: "var(--text-muted)", marginBottom: "3rem" }}
           >
             Here are some of the projects I've worked on recently. Each project 
             showcases different skills and technologies.
           </motion.p>
 
-          <Row style={{ justifyContent: "center" }}>
+          <Row style={{ justifyContent: "center", alignItems: "stretch" }}>
             {PROJECTS.map((project, index) => (
               <Col lg={4} md={6} key={index} className="project-card">
                 <motion.div
@@ -80,6 +80,23 @@ function Projects() {
               <BsArrowRight />
             </a>
           </motion.div>
+          <div style={{ marginTop: "5rem" }}>
+            <motion.h2 variants={fadeInUp} className="project-heading" style={{ fontSize: "2rem", marginBottom: "2rem", color: "white" }}>
+              Case <span className="purple">Studies</span>
+            </motion.h2>
+            <motion.p variants={fadeInUp} style={{ color: "white" }}>
+              Coming soon: Deep dives into AI Document Intelligence, SaaS Development, and Enterprise Dashboards.
+            </motion.p>
+          </div>
+
+          <div style={{ marginTop: "5rem", marginBottom: "3rem" }}>
+            <motion.h2 variants={fadeInUp} className="project-heading" style={{ fontSize: "2rem", marginBottom: "2rem", color: "white" }}>
+              Client <span className="purple">Testimonials</span>
+            </motion.h2>
+            <motion.p variants={fadeInUp} style={{ color: "white" }}>
+              "Adeel transformed our approach to AI integration. The scalable architecture he delivered was beyond our expectations." - <em>Placeholder Testimonial</em>
+            </motion.p>
+          </div>
         </motion.div>
       </Container>
     </Container>
